@@ -4,7 +4,7 @@
 # Project Name
 
 ## Overview
-This project is an Electron app that requires both a backend and frontend setup. Follow the steps below to quickly clone and run the app using a simplified approach.
+This project is an Electron app that  requires frontend setup. Follow the steps below to quickly clone and run the app using a simplified approach.
 
 ## Prerequisites
 Before you begin, make sure you have the following installed:
