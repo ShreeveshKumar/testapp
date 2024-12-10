@@ -1,4 +1,4 @@
-###electron-vite-react
+### electron-vite-react
 
 ```markdown
 # Project Name
