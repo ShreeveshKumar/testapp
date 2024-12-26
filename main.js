@@ -6,7 +6,7 @@ var is_development = true;
 
 const UI_FOLDER = path.join(__dirname, 'ui');
 const DIST_FOLDER = path.join(UI_FOLDER, 'dist');
-const BASE_URL = is_development ? "http://localhost:3000" : `file://${path.join(DIST_FOLDER, 'index.html')}`;
+const BASE_URL = is_development ? "http://localhost:3001" : `file://${path.join(DIST_FOLDER, 'index.html')}`;
 
 autoUpdater.autoDownload = false;
 autoUpdater.autoInstallOnAppQuit = true;

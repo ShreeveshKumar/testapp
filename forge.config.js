@@ -9,7 +9,11 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        name: 'test',
+        authors: 'builder',
+        exe: 'testmaker.exe',
+      },
     },
     {
       name: '@electron-forge/maker-zip',

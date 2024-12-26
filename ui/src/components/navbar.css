@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    width: 100%; /* Full width */
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px #0000001a;
+}
+
+.navbar-logo {
+    height: 60px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}

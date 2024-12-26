@@ -1,0 +1,484 @@
+/* General table styles */
+.notebook-table {
+  width: 100%;  
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-x: auto;
+}
+
+/* Table title */
+.notebook-table h2 {
+  font-size: 24px; 
+  color: #333;
+}
+
+/* Summary section (number of items displayed) */
+.summary {
+  margin-top: 10px; 
+  font-size: 14px; 
+  font-weight: bold; 
+  text-align: right; 
+  color: #333; 
+}
+
+/* Table structure */
+.notebook-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table cell styling */
+.notebook-table th,
+.notebook-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Table headers */
+.notebook-table th {
+  color: #333; 
+  font-weight: bold;
+}
+
+/* Alternate row coloring for better readability */
+.notebook-table tr:nth-child(even) {
+  background-color: #f7f7f7; 
+}
+
+/* Button styles */
+.notebook-table .delete-button,
+.notebook-table .whitelist-button {
+  border: none; 
+  padding: 8px 12px; 
+  border-radius: 4px;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Delete button */
+.notebook-table .delete-button {
+  background-color: #ff4d4d; 
+  color: white; 
+}
+
+/* Whitelist button */
+.notebook-table .whitelist-button {
+  background-color: #ffa500; 
+  color: white; 
+  margin-left: 8px; 
+}
+
+/* Center align the action buttons inside the cell */
+.notebook-table .action-buttons {
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 8px; /* Space between buttons */
+  padding: 8px; /* Optional padding for better spacing */
+}
+
+/* Delete button styles */
+.notebook-table .delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Whitelist button styles */
+.notebook-table .whitelist-button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effects for delete button */
+.notebook-table .delete-button:hover {
+  background-color: #e04343;
+  transform: scale(1.05);
+}
+
+/* Hover effects for whitelist button */
+.notebook-table .whitelist-button:hover {
+  background-color: #e69500; 
+  transform: scale(1.05); 
+}
+
+
+.search-input {
+  width: 100%; /* Full width by default */
+  max-width: 300px; /* Limit width for smaller screens */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Hover effects for delete button */
+.notebook-table .delete-button:hover {
+  background-color: #e04343;
+  transform: scale(1.05); 
+}
+
+/* Hover effects for whitelist button */
+.notebook-table .whitelist-button:hover {
+  background-color: #e69500; 
+  transform: scale(1.05); 
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex; 
+  align-items: center; 
+  width: 60%;
+  margin-bottom: 15px; 
+}
+
+/* Label styling inside the search bar */
+.search-bar label {
+  margin-right: 10px; 
+  font-size: 1rem; 
+  width: 180px;
+}
+
+/* Input field styling for search bar */
+.search-bar input {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  width: 100%; 
+  max-width: 900px; 
+}
+
+/* Highlight the sorted column */
+.highlighted-column {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+  font-weight: bold; /* Bold text for better visibility */
+}
+
+/* Optional: You can also add hover effect to highlight on hover */
+th:hover {
+  background-color: #c3e6cb;
+}
+
+/* Add smooth transition for highlighting */
+.highlighted-column {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.pagination button.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination .ellipsis {
+  padding: 8px 12px;
+  color: #888;
+}
+
+.whitelist-all-button{
+  /* background-color: #ffa500; */
+  border: 2px solid #e04343;
+  color: #e04343;
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Green color for the "Next" button */
+.next-button {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text color */
+  border: 1px solid #28a745; /* Matching green border */
+  padding: 8px 12px; /* Padding for better button size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+}
+
+.next-button:disabled {
+  background-color: #cccccc; /* Gray color when disabled */
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.next-button:hover:not(:disabled) {
+  background-color: #218838; /* Darker green on hover */
+  border-color: #1e7e34;
+}
+
+
+/* Styles for notebook path links (to prevent overflow) */
+.notebook-path {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20ch; 
+}
+
+
+/* Styling for links inside the notebook path */
+.notebook-path a {
+  text-decoration: none; 
+  color: #000; 
+}
+
+/* Hover effect for links */
+.notebook-path a:hover {
+  text-decoration: underline; 
+  color: #0056b3; 
+}
+
+/* Styling for the delete all button */
+.delete-all {
+  margin: 15px 0;
+  text-align: right; 
+}
+
+/* Sorting button styles */
+.sort-button {
+  background: none;
+  border: none;
+  color: inherit; 
+  font-size: 0.9rem;
+  cursor: pointer; 
+  padding: 0 5px; 
+  margin-left: 5px;
+}
+
+/* Focus and hover effects for sorting buttons */
+.sort-button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+  tr:hover{
+    background-color: #faf5e1;
+  }
+
+  tr:nth-child(odd):hover,
+  tr:nth-child(even):hover {
+    background-color: #faf5e1 !important;
+  }
+.sort-button:hover {
+  color: #0073e6; /* Highlight color for hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.sort-button:active {
+  transform: scale(0.95); /* Slightly shrink the button on click */
+}
+.search-bar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+/* Delete All button styling */
+.delete-all-button {
+  border: 2px solid #e04343;
+  color: #e04343;
+  background-color: white;
+  margin-right: 5px;
+  padding: 8px 10px; 
+  border-radius: 4px;
+  cursor: pointer; 
+  font-size: 1rem; 
+}
+
+.delete-all-button:hover {
+  background-color: #ff1a1a;
+  color: white;
+}
+
+/* Disabled state for the delete-all button */
+.delete-all-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .search-input {
+    width: 700px; /* Increase the width */
+    padding: 10px; /* Slightly larger padding */
+    font-size: 16px; /* Larger text for better visibility */
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-input {
+    width: 700px; /* Extend further for extra large screens */
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Adjust table width and padding for smaller screens */
+  .notebook-table {
+    width: 95%;
+    padding: 10px;
+  }
+
+  /* Adjust padding and font size for table cells */
+  .notebook-table th,
+  .notebook-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Adjust button sizes for smaller screens */
+  .notebook-table .delete-button,
+  .notebook-table .whitelist-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+.actions-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Add spacing between buttons */
+}
+
+.actions-cell button {
+  width: 36px; /* Uniform width */
+  height: 36px; /* Uniform height */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; /* Centers icons inside buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions-cell button.delete-button {
+  background-color: #ff4d4f; /* Red color for delete */
+  color: white;
+}
+
+.actions-cell button.confirm-button {
+  background-color: #ffa940; /* Orange color for confirm */
+  color: white;
+}
+
+.sort-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.sort-button:hover {
+  color: #007bff; /* Change icon color on hover */
+}
+
+.highlighted-column {
+  background-color: #f0f8ff;
+  font-weight: bold;
+  color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Specific colors for different types of notebooks */
+.type-notebook {
+  color: #1e90ff; /* Dodger Blue for notebooks */
+}
+
+.type-folder {
+  color: #8b4513; /* Saddle Brown for folders */
+}
+
+.type-table {
+  color: #290bea; /* Tomato for tables */
+}
+.notebook-table th:nth-child(1), /* Sr No column */
+.notebook-table td:nth-child(1) {
+  width: 5px; /* Make Sr No column narrower */
+  text-align: center;
+}
+
+/* Adjust column widths for specific table headers */
+.notebook-table th:nth-child(2), /* Sr No column */
+.notebook-table td:nth-child(2) {
+  width: 75px; /* Make Sr No column narrower */
+}
+
+.notebook-table th:nth-child(3), /* Object Path column */
+.notebook-table td:nth-child(3) {
+  width: 300px; /* Provide more space for Object Path */
+  text-align: left; /* Align text to the left for better readability */
+}
+
+.notebook-table th:nth-child(4), /* Last Modified column */
+.notebook-table td:nth-child(4) {
+  width: 200px; /* Provide more space for Last Modified */
+}
+
+.notebook-table th:nth-child(5), /* Last Modified column */
+.notebook-table td:nth-child(5) {
+  width: 60px; /* Provide more space for Last Modified */
+}
+
+.notebook-table th:nth-child(6), /* Last Modified column */
+.notebook-table td:nth-child(6) {
+  width: 80px; /* Provide more space for Last Modified */
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  /* Reduce padding and font size for smaller devices */
+  .notebook-table {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  /* Adjust padding and font size for table cells */
+  .notebook-table th,
+  .notebook-table td {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  /* Adjust heading size */
+  .notebook-table h2 {
+    font-size: 20px;
+  }
+}
